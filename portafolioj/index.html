@@ -2,6 +2,7 @@
 <html lang="es">
 
 <head>
+    <link rel="stylesheet" href="css/styles.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mi portafolio</title>
@@ -11,27 +12,54 @@
 
 <body>
     <header>
-        jose david visbal bolaño
+        <div class="info">
+            <h1>jose Visbal</h1>
+            <img src="public/img/logojv.png" class="logo">
+        </div>
         <nav>
-            <a href="#Sobre mi">Sobre mi</a><br>
-            <a href="#Proyecto">proyecto</a><br>
-            <a href="#Contacto">contacto</a><br>
+            <ul>
+                <li><a href="#Sobre mi">Sobre mi</a><br></li>
+                <li><a href="#Proyecto">proyecto</a><br></li>
+                <li><a href="#Contacto" title="visita contacto">contacto</a><br></li>
+            </ul>
         </nav>
     </header>
     <section id="Sobre mi">
         <h2>Sobre mi</h2>
-        <p>soy estudiante de programacion </p>
-    </section>
-    <section id="proyecto">
-        <ul>menu de inventario</ul>
-        <ul>portafolio</ul>
-        <ul>cajero automatico</ul>
-    </section>
- <form>
-    <input>
- </form>   
+        <p>Soy una persona que busca crecer cada día, tanto en lo personal como en lo profesional.Me interesa aprender
+            cosas nuevas, especialmente en el área de la tecnología, como la programación
+            y el desarrollo web. Me considero alguien responsable, con ganas de superarse y de enfrentar nuevos retos.
+            Disfruto adquirir conocimientos que me permitan mejorar mis habilidades y abrirme más oportunidades en el
+            futuro. Mi objetivo es seguir formándome, ganar experiencia y construir un camino sólido que me permita
+            alcanzar
+            mis metas. </p>
 
- <a href="mascotas.html"> Ir a Mascotas</a>
+    </section>
+    <form>
+        <section id="proyecto">
+            <ul>
+                <li> <a href="#">menu de inventario</a></li>
+                <li><a href="#">portafolio</a></li>
+                <li><a href="#">cajero automatico</a></li>
+            </ul>
+
+    </form>
+    </section>
+
+    <section id="contacto">
+        <h2>Contacto</h2>
+        <form>
+            <label for="nombre">Nombre</label><br>
+            <input type="text" id="nombre" name="nombre" placeholder="Tu Nombre"><br><br>
+
+            <label for="email">Correo</label><br>
+            <input type="email" id="email" name="email" placeholder="Tu Correo"><br><br>
+            <button type="submit">Enviar Mensaje</button>
+        </form>
+    </section>
+
+    <a href="src/views/mascotas.html"> Ir a mascoras</a>
 </body>
+
 
 </html>
